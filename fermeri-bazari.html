@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ქართული ფერმერთა ბაზარი</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5fff3;
+    }
+    header {
+      background-color: #3a8b2e;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #2f6e23;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1524591144801-47f06b598b18') no-repeat center center/cover;
+      height: 300px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .product {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .product h3 {
+      margin: 0.5rem 0;
+    }
+    .product p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .contact {
+      font-size: 0.85rem;
+      color: #777;
+      margin-top: 0.3rem;
+    }
+    .buy-btn {
+      background-color: #3a8b2e;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+    .buy-btn:hover {
+      background-color: #2c6c20;
+    }
+    .form-section {
+      padding: 2rem;
+      background-color: #e8f6e3;
+    }
+    .form-section h2 {
+      text-align: center;
+      color: #2f6e23;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    input, textarea {
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .submit-btn {
+      background-color: #3a8b2e;
+      color: white;
+      padding: 0.7rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #2f6e23;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+  <script>
+    function contactFarmer() {
+      alert("გთხოვთ დაუკავშირდეთ ფერმერს მიწოდებისთვის");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>ქართული ფერმერთა ბაზარი</h1>
+    <p>შენი წვდომა სოფლის პროდუქტებზე — პირდაპირ მწარმოებლისგან</p>
+  </header>
+
+  <nav>
+    <a href="#">მთავარი</a>
+    <a href="#products">პროდუქტები</a>
+    <a href="#form">დამატება</a>
+    <a href="#contact">კონტაქტი</a>
+  </nav>
+
+  <div class="hero">
+    ნატურალური პროდუქტები სოფლებიდან
+  </div>
+
+  <section class="products" id="products">
+    <div class="product">
+      <img src="/mnt/data/cdae8fef-9e56-4e0e-a8bf-055faf917ae4.jpg" alt="ყველი">
+      <h3>სულგუნი</h3>
+      <p>სოფელ მესტიადან, ნატურალური რძით. 1კგ — 10₾</p>
+      <p class="contact">ფერმერი: გიორგი ნ. | ნომერი: 595-12-34-56</p>
+      <p class="contact">საკომისიო ადმინისტრაციისთვის: 1₾</p>
+      <button class="buy-btn" onclick="contactFarmer()">ყიდვა</button>
+    </div>
+
+    <div class="product">
+      <img src="/mnt/data/4716333d-6d07-40d1-a93d-a28847099b21.jpg" alt="ვაშლი">
+      <h3>ვაშლი</h3>
+      <p>ახმეტიდან, ბუნებრივად მოწეული. 1კგ — 3₾</p>
+      <p class="contact">ფერმერი: მარიამ მ. | ნომერი: 598-77-88-99</p>
+      <p class="contact">საკომისიო ადმინისტრაციისთვის: 0.3₾</p>
+      <button class="buy-btn" onclick="contactFarmer()">ყიდვა</button>
+    </div>
+
+    <div class="product">
+      <img src="/mnt/data/ee57b0ee-1809-4ae0-aef0-45f16e5ef749.jpg" alt="რძე">
+      <h3>რძე</h3>
+      <p>ნატურალური ძროხის რძე სოფელ გურჯაანიდან. 1ლ — 2.5₾</p>
+      <p class="contact">ფერმერი: ნინო ბ. | ნომერი: 599-11-22-33</p>
+      <p class="contact">საკომისიო ადმინისტრაციისთვის: 0.25₾</p>
+      <button class="buy-btn" onclick="contactFarmer()">ყიდვა</button>
+    </div>
+  </section>
+
+  <section class="form-section" id="form">
+    <h2>დაამატე პროდუქტი</h2>
+    <form>
+      <input type="text" placeholder="პროდუქტის სახელი" required>
+      <input type="text" placeholder="ფასი (მაგ: 1კგ — 5₾)" required>
+      <textarea placeholder="აღწერა (სოფელი, ბუნებრივობა...)" required></textarea>
+      <input type="text" placeholder="ფერმერის სახელი და გვარი">
+      <input type="text" placeholder="საკონტაქტო ნომერი">
+      <input type="text" placeholder="საკომისიო ადმინისტრაციისთვის">
+      <input type="file">
+      <button type="submit" class="submit-btn">დამატება</button>
+    </form>
+  </section>
+
+  <footer id="contact">
+    &copy; 2025 ქართულ ფერმერთა ბაზარი | ყველა უფლება დაცულია
+  </footer>
+</body>
+</html>
